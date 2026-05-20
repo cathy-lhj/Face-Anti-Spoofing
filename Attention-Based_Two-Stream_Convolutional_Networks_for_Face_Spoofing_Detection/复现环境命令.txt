@@ -1,4 +1,3 @@
-你这个论文代码是 老版本深度学习代码，只能运行在：
 Python 3.7
 TensorFlow 1.15.5
 Keras 2.3.1
@@ -7,6 +6,12 @@ Keras 2.3.1
 进入我的项目文件夹：E:
 cd E:\Python\Attention-Based_Two-Stream_Convolutional_Networks_for_Face_Spoofing_Detection
 
-开始训练：python train.py --bs 8 --dim 224 --backbone MobileNetV3_Large
+处理CASIA:运行脚本处理数据集：python prepare_casia.py
 
-运行脚本处理数据集：python prepare_casia.py
+开始训练：python train.py --bs 8 --dim 299 --backbone MobileNetV3
+最优权重：weight-22-0.99-1.00-0.00000.hdf5
+
+python test_official.py --bs 8 --dim 299 --backbone MobileNetV3_Large --weight save_weight/weight-89-1.00-0.99-0.00001.hdf5
+测试：python test4_24.py
+系统python test4_24_2.py
+
