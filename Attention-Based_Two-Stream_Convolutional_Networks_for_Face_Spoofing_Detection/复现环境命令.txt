@@ -1,0 +1,12 @@
+你这个论文代码是 老版本深度学习代码，只能运行在：
+Python 3.7
+TensorFlow 1.15.5
+Keras 2.3.1
+
+进入新环境：conda activate face
+进入我的项目文件夹：E:
+cd E:\Python\Attention-Based_Two-Stream_Convolutional_Networks_for_Face_Spoofing_Detection
+
+开始训练：python train.py --bs 8 --dim 224 --backbone MobileNetV3_Large
+
+运行脚本处理数据集：python prepare_casia.py
